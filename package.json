@@ -1,0 +1,24 @@
+{
+  "name": "vb-resume",
+  "version": "1.0.0",
+  "description": "Vasilii Besschetnov's resume",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Vasilii",
+    "Besschetnov",
+    "resume",
+    "web",
+    "developer",
+    "javascript",
+    "react",
+    "jquery"
+  ],
+  "author": "Vasilii Besschetnov",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^3.10.0"
+  }
+}
