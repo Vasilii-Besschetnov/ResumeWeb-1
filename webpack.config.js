@@ -8,8 +8,18 @@ module.exports = {
     entry: {
         main: "./src/index.js"
     },
+    devtool: 'inline-source-map',
     module: {
-        rules: [{
+        rules: [{ // Process JS with Babel.
+            test: /\.(js|jsx|mjs)$/,
+            use: {
+                loader: 'babel-loader',
+                options: {
+                    presets: ['es2015', 'react']
+                }
+            }
+        },
+        { // styles
             test: /\.scss$/,
             use: ExtractTextPlugin.extract({
                 fallback: "style-loader", // creates style nodes from JS strings
@@ -19,6 +29,22 @@ module.exports = {
                     loader: "sass-loader" // compiles Sass to CSS
                 }]
             })
+        }, { // fonts
+            test: /\.(woff|woff2|eot|ttf|otf)$/,
+            use: {
+                loader: "file-loader",
+                options: {
+                    name: "images/[name].[ext]"
+                }
+            }
+        }, { // images
+            test: /\.(png|svg|jpg|jpeg|gif)$/,
+            use: {
+                loader: "file-loader",
+                options: {
+                    name: "fonts/[name].[ext]"
+                }
+            }
         }]
     },
     plugins: [
@@ -27,6 +53,12 @@ module.exports = {
         }),
         new ExtractTextPlugin("styles/[name].css"),
     ],
+    resolve: {
+        alias: {
+            images: path.resolve(__dirname, 'src/images/'),
+            components: path.resolve(__dirname, 'src/components/')
+        }
+    },
     output: {
         filename: "js/[name].bundle.js",
         path: path.resolve(__dirname, deployPath)
