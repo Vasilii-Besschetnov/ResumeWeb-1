@@ -24,7 +24,7 @@
 }
 
 .person-photo {
-    @include circle(100px);
+    @include circle($photoWidth);
     background: white;
     overflow: hidden;
     
@@ -41,6 +41,6 @@
     
     .cnt-name {
         text-align: left;
-        margin-left: 30px
+        margin-left: $photoMargin;
     }
 }

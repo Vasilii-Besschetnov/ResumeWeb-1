@@ -1,0 +1,27 @@
+@import "~styles/_variables.scss";
+
+.cnt-personal-info {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+}
+.info-label {
+    &:after {
+        content: ":"
+    }
+}
+
+
+@media (min-width: $smallDeviceWidth)  {
+    .cnt-personal-info {
+        align-items: flex-start;
+        text-align: left;
+    }
+    .cnt-info {
+        display: flex;
+    }
+    .info-label {
+        width: $photoWidth + $photoMargin;
+    }
+}
