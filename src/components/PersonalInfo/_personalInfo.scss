@@ -1,12 +1,12 @@
 @import "~styles/_variables.scss";
 
-.cnt-personal-info {
+.cntPersonalInfo {
     display: flex;
     flex-flow: column;
     align-items: center;
     text-align: center;
 }
-.info-label {
+.infoLabel {
     &:after {
         content: ":"
     }
@@ -14,14 +14,14 @@
 
 
 @media (min-width: $smallDeviceWidth)  {
-    .cnt-personal-info {
+    .cntPersonalInfo {
         align-items: flex-start;
         text-align: left;
     }
-    .cnt-info {
+    .cntInfo {
         display: flex;
     }
-    .info-label {
+    .infoLabel {
         min-width: $photoWidth + $photoMargin;
     }
 }

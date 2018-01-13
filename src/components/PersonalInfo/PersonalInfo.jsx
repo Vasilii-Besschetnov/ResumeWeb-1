@@ -1,13 +1,13 @@
 import React from "react";
-import "./_personalInfo.scss";
+import { cntPersonalInfo, infoLabel, cntInfo } from "./_personalInfo.scss";
 
 const Row = ({
     label,
     value
 }) => {
     return (
-        <div className="cnt-info">
-            <div className="info-label">{label}</div>
+        <div className={cntInfo}>
+            <div className={infoLabel}>{label}</div>
             <div className="info-value">{value}</div>
         </div>
     );
@@ -18,7 +18,7 @@ const PersonalInfo = () => {
           linkedInUrl = "www.linkedin.com/in/vasilii-besschetnov",
           phone = "650-495-23-88";
     return (
-        <div className="cnt-personal-info">
+        <div className={cntPersonalInfo}>
             <Row label="Phone"
                 value={<a href={"tel:" + phone}>{phone}</a>} />
             <Row label="Email"
