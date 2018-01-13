@@ -1,0 +1,15 @@
+@import "~styles/_variables.scss";
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+
+@media (min-width: $mediumDeviceWidth)  {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

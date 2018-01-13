@@ -39,8 +39,11 @@
         flex-flow: row;
     }
     
+    .person-photo {        
+        margin-right: $photoMargin;
+    }
+    
     .cnt-name {
         text-align: left;
-        margin-left: $photoMargin;
     }
 }

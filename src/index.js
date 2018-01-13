@@ -1,11 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Person from "components/Person/Person.jsx";
-import PersonalInfo from "components/PersonalInfo/PersonalInfo.jsx";
+import Header from "components/Header/Header.jsx";
 
 const root = document.getElementById("Root");
 
-ReactDOM.render(<div>
-                <Person />
-                <PersonalInfo />
-                </div>, root);
+ReactDOM.render(<Header />, root);
