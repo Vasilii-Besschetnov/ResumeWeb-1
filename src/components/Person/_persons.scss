@@ -1,3 +1,4 @@
+@import "~styles/_variables.scss";
 @import "~styles/_mixins.scss";
 
 .cnt-person {
@@ -33,13 +34,13 @@
     }
 }
 
-@media (min-width: 450px)  {
+@media (min-width: $smallDeviceWidth)  {
     .cnt-person {
         flex-flow: row;
     }
     
     .cnt-name {
         text-align: left;
-        padding-left: 30px
+        margin-left: 30px
     }
 }
