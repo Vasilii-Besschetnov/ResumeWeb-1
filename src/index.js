@@ -1,8 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Person from "components/Person/Person";
-
-import img from "./images/MyPhoto_small.jpg";
+import Person from "components/Person/Person.jsx";
 
 const root = document.getElementById("Root");
 

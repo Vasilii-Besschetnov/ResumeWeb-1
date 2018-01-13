@@ -5,9 +5,10 @@ const CleanWebpackPlugin = require("clean-webpack-plugin");
 const deployPath = "deploy";
 
 const paths = {
-    src: path.resolve(__dirname, 'src/'),
-    components: path.resolve(__dirname, 'src/components/'),
-    images: path.resolve(__dirname, 'src/images/')
+    src: path.resolve(__dirname, 'src'),
+    components: path.resolve(__dirname, 'src/components'),
+    images: path.resolve(__dirname, 'src/images'),
+    styles: path.resolve(__dirname, 'src/styles'),
 };
 
 module.exports = {
@@ -63,7 +64,8 @@ module.exports = {
     resolve: {
         alias: {
             images: paths.images,
-            components: paths.components
+            components: paths.components,            
+            styles: paths.styles
         }
     },
     output: {

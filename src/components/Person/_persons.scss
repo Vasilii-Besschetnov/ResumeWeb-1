@@ -1,0 +1,45 @@
+@import "~styles/_mixins.scss";
+
+.cnt-person {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cnt-photo, .cnt-name {
+}
+
+.cnt-name {
+}
+
+.person-name {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.person-position {
+    font-size: 25px;
+}
+
+.person-photo {
+    @include circle(100px);
+    background: white;
+    overflow: hidden;
+    
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media (min-width: 450px)  {
+    .cnt-person {
+        flex-flow: row;
+    }
+    
+    .cnt-name {
+        text-align: left;
+        padding-left: 30px
+    }
+}
