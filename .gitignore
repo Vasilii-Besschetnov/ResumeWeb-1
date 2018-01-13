@@ -5,7 +5,7 @@
 /coverage
 
 # production
-/deploy
+/deploy/*
 !/deploy/index.html
 
 /package-lock.json
