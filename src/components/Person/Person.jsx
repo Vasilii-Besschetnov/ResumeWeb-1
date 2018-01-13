@@ -1,22 +1,22 @@
 import React from "react";
 import img from "images/MyPhoto_small.jpg";
-import "./_persons.scss";
+import { cntPerson, personName, personPosition, personPhoto, cntName } from "./_persons.scss";
 
 const Person = () => {
     const fullName = "Vasilii Besschetnov",
           position = "Lead Web Developer";
     return (
-        <div className="cnt-person">
+        <div className={cntPerson}>
             <div className="cnt-photo">
-                <div className="person-photo">
+                <div className={personPhoto}>
                     <img src={img} alt={fullName} />
                 </div>
             </div>
-            <div className="cnt-name">
-                <div className="person-name">
+            <div className={cntName}>
+                <div className={personName}>
                     {fullName}
                 </div>
-                <div className="person-position">
+                <div className={personPosition}>
                     {position}
                 </div>
             </div>

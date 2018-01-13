@@ -1,29 +1,23 @@
 @import "~styles/_variables.scss";
 @import "~styles/_mixins.scss";
 
-.cnt-person {
+.cntPerson {
     display: flex;
     flex-flow: column;
     align-items: center;
     text-align: center;
 }
 
-.cnt-photo, .cnt-name {
-}
-
-.cnt-name {
-}
-
-.person-name {
+.personName {
     font-weight: bold;
     font-size: 35px;
 }
 
-.person-position {
+.personPosition {
     font-size: 25px;
 }
 
-.person-photo {
+.personPhoto {
     @include circle($photoWidth);
     background: white;
     overflow: hidden;
@@ -35,15 +29,15 @@
 }
 
 @media (min-width: $smallDeviceWidth)  {
-    .cnt-person {
+    .cntPerson {
         flex-flow: row;
     }
     
-    .person-photo {        
+    .personPhoto {
         margin-right: $photoMargin;
     }
     
-    .cnt-name {
+    .cntName {
         text-align: left;
     }
 }
