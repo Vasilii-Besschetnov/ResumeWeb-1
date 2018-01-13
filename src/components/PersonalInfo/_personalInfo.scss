@@ -22,6 +22,6 @@
         display: flex;
     }
     .info-label {
-        width: $photoWidth + $photoMargin;
+        min-width: $photoWidth + $photoMargin;
     }
 }

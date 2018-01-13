@@ -10,6 +10,13 @@
 @media (min-width: $mediumDeviceWidth)  {
     .header {
         flex-direction: row;
-        justify-content: space-between;
+    }
+    
+    .header-person {
+        flex: 2;
+    }
+    
+    .header-info {
+        flex: 1;
     }
 }
