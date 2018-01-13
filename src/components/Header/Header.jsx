@@ -1,20 +1,20 @@
 import React from "react";
-import "styles/_common.scss";
-import "./_header.scss";
+import { headerWrapper, header, headerPerson, headerInfo} from "./_header.scss";
+import MaxWidth from "components/MaxWidth/MaxWidth.jsx";
 import Person from "components/Person/Person.jsx";
 import PersonalInfo from "components/PersonalInfo/PersonalInfo.jsx";
 
 const Header = () => {
     return (
-        <div className="header-wrapper">
-            <div className="header max-width">
-                <div className="header-person">
+        <div className={headerWrapper}>
+            <MaxWidth className={header}>            
+                <div className={headerPerson}>
                     <Person />
                 </div>
-                <div className="header-info">
+                <div className={headerInfo}>
                     <PersonalInfo />
-                </div>
-            </div>
+                </div>            
+            </MaxWidth>
         </div>
     );
 };

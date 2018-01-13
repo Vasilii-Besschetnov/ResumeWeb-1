@@ -1,6 +1,6 @@
 @import "~styles/_variables.scss";
 
-.header-wrapper {
+.headerWrapper {
     $c: white;
     background: $color;
     color: $c;
@@ -22,11 +22,11 @@
         flex-direction: row;
     }
     
-    .header-person {
+    .headerPerson {
         flex: 2;
     }
     
-    .header-info {
+    .headerInfo {
         flex: 1;
     }
 }

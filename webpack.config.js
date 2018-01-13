@@ -33,7 +33,11 @@ module.exports = {
             use: ExtractTextPlugin.extract({
                 fallback: "style-loader", // creates style nodes from JS strings
                 use: [{
-                    loader: "css-loader" // translates CSS into CommonJS
+                    loader: "css-loader", // translates CSS into CommonJS
+                    options: {
+                        modules: true,
+                        localIdentName: "[name]__[local]__[hash:base64:5]"
+                    }
                 }, {
                     loader: "sass-loader" // compiles Sass to CSS
                 }]
