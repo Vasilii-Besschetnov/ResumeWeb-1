@@ -4,6 +4,12 @@ const CleanWebpackPlugin = require("clean-webpack-plugin");
 
 const deployPath = "deploy";
 
+const paths = {
+    src: path.resolve(__dirname, 'src/'),
+    components: path.resolve(__dirname, 'src/components/'),
+    images: path.resolve(__dirname, 'src/images/')
+};
+
 module.exports = {
     entry: {
         main: "./src/index.js"
@@ -12,6 +18,7 @@ module.exports = {
     module: {
         rules: [{ // Process JS with Babel.
             test: /\.(js|jsx|mjs)$/,
+            include : paths.src,
             use: {
                 loader: 'babel-loader',
                 options: {
@@ -55,8 +62,8 @@ module.exports = {
     ],
     resolve: {
         alias: {
-            images: path.resolve(__dirname, 'src/images/'),
-            components: path.resolve(__dirname, 'src/components/')
+            images: paths.images,
+            components: paths.components
         }
     },
     output: {
