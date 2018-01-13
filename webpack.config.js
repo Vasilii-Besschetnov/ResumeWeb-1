@@ -9,6 +9,7 @@ const paths = {
     components: path.resolve(__dirname, 'src/components'),
     images: path.resolve(__dirname, 'src/images'),
     styles: path.resolve(__dirname, 'src/styles'),
+    fonts: path.resolve(__dirname, 'src/fonts'),
 };
 
 module.exports = {
@@ -64,8 +65,9 @@ module.exports = {
     resolve: {
         alias: {
             images: paths.images,
-            components: paths.components,            
-            styles: paths.styles
+            components: paths.components,
+            styles: paths.styles,
+            fonts: paths.fonts
         }
     },
     output: {

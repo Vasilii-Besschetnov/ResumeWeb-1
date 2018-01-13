@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "styles/_reset.scss";
-import Header from "components/Header/Header.jsx";
+import Resume from "components/Resume/Resume.jsx";
 
 const root = document.getElementById("Root");
 
-ReactDOM.render(<Header />, root);
+ReactDOM.render(<Resume />, root);
