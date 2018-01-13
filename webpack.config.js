@@ -42,7 +42,7 @@ module.exports = {
             use: {
                 loader: "file-loader",
                 options: {
-                    name: "images/[name].[ext]"
+                    name: "fonts/[name].[ext]"
                 }
             }
         }, { // images
@@ -50,7 +50,7 @@ module.exports = {
             use: {
                 loader: "file-loader",
                 options: {
-                    name: "fonts/[name].[ext]"
+                    name: "images/[name].[ext]"
                 }
             }
         }]
