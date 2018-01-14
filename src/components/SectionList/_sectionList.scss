@@ -1,0 +1,15 @@
+@import "~styles/_variables.scss";
+
+.sectionList {
+    position: relative; // for vertival line
+}
+
+.vertLine {
+    $width: 2px;
+    width: $width;
+    background: $color2;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+}
