@@ -23,10 +23,10 @@
     }
     
     .headerPerson {
-        flex: 2;
+        flex: $mainCol;
     }
     
     .headerInfo {
-        flex: 1;
+        flex: $additionalCol;
     }
 }

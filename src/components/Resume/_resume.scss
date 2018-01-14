@@ -1,4 +1,5 @@
 @import "~styles/_variables.scss";
+
 @font-face {
   font-family: 'Ebrima';
     //fonts are stored in src/fonts. stlyes should be compiledin a root (deploy folder, see webpack.config)
@@ -11,5 +12,33 @@
     
     ul {
         padding-left: 20px;
+    }
+}
+
+
+.cntExp {
+    height: 200px;
+    background: red;
+}
+
+.cntSkills {
+    
+    height: 200px;
+    background: blue;
+}
+
+
+@media (min-width: $mediumDeviceWidth)  {
+    
+    .cntMain {
+        display: flex;
+    }
+    
+    .cntExp {
+        flex: $mainCol;
+    }
+    
+    .cntSkills {
+        flex: $additionalCol;
     }
 }
