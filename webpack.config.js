@@ -64,7 +64,7 @@ module.exports = {
         new CleanWebpackPlugin(deployPath, {
             exclude: ["index.html"]
         }),
-        new ExtractTextPlugin("styles/[name].css"),
+        new ExtractTextPlugin("[name].css"),
     ],
     resolve: {
         alias: {

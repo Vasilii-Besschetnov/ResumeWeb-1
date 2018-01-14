@@ -1,8 +1,9 @@
 @import "~styles/_variables.scss";
-/*@font-face {
+@font-face {
   font-family: 'Ebrima';
-  src: url("~fonts/ebrima.ttf");
-}*/
+    //fonts are stored in src/fonts. stlyes should be compiledin a root (deploy folder, see webpack.config)
+  src: url("fonts/ebrima.ttf"), url("fonts/ebrimabd.ttf");
+}
 .resume {
     font-family: "Ebrima";
     font-size: 14px;
