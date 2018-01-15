@@ -3,14 +3,13 @@
 
 $iconMargin: 15px;
 
-.section {
-    margin-top: 20px;
+.contentRow {
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
+    align-items: baseline;
 }
 
-.sectionIcon {
+.rowIcon {
     width: $iconWidth;
     text-align: center;
     margin-right: $iconMargin;
@@ -29,22 +28,22 @@ $iconMargin: 15px;
     }
 }
 
-.sectionContent {
+.rowContent {
     flex: 1;
 }
 
-.sectionPeriod {
+.rowPeriod {
     flex: 1 100%;
     margin-left: $iconWidth + $iconMargin;
 }
 
 
 @media (min-width: $mediumDeviceWidth)  {
-    .section {
+    .contentRow {
         flex-wrap: nowrap;
     }
     
-    .sectionPeriod {
+    .rowPeriod {
         order: -1;
         margin-left: 0;
         flex: 0 auto;

@@ -1,30 +1,36 @@
 import React from "react";
-import { section, sectionIcon, sectionPeriod, sectionContent, circle, middle } from "./_contentRow.scss";
+import { contentRow, rowIcon, rowPeriod, rowContent, circle, middle } from "./_contentRow.scss";
 
-const Section = ({
+const ContentRow = ({
     content,
+    rootCls,
     iconCls,
     iconHidden,
     isLargeIcon,
     period,
     periodHidden
 }) => {
-    const cls = [];
+    const cls = [],
+        style = {};
     
     if (!iconHidden) {
         cls.push(circle);
-        if (isLargeIcon) cls.push(middle);
+        if (isLargeIcon) {
+            cls.push(middle);
+            style.alignItems = "center";
+        }
+        
     }
     if (iconCls) cls.push(iconCls);
     
-    return (<div class={section}>
-            <div class={sectionIcon}>
+    return (<div className={`${contentRow} ${rootCls}`} style={style}>
+            <div className={rowIcon}>
                 <div className={cls.join(" ")}></div>
             </div>
-            <div class={sectionContent}>{content}</div>
-            {!periodHidden && (<div class={sectionPeriod}>{period}</div>)}
+            <div className={rowContent}>{content}</div>
+            {!periodHidden && (<div className={rowPeriod}>{period}</div>)}
     </div>);
 };
 
 
-export default Section;
+export default ContentRow;
