@@ -69,6 +69,7 @@ module.exports = {
     ],
     resolve: {
         alias: {
+            src: paths.src,
             images: paths.images,
             components: paths.components,
             styles: paths.styles,

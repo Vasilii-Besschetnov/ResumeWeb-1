@@ -4,13 +4,17 @@ import { section, sectionIcon, sectionPeriod, sectionContent, circle, middle } f
 const Section = ({
     content,
     iconCls,
+    iconHidden,
     isLargeIcon,
     period,
     periodHidden
 }) => {
-    const cls = [circle];
+    const cls = [];
     
-    if (isLargeIcon) cls.push(middle);
+    if (!iconHidden) {
+        cls.push(circle);
+        if (isLargeIcon) cls.push(middle);
+    }
     if (iconCls) cls.push(iconCls);
     
     return (<div class={section}>
