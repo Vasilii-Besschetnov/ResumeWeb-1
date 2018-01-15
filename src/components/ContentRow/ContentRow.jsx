@@ -1,5 +1,5 @@
 import React from "react";
-import { section, sectionIcon, sectionPeriod, sectionContent, circle, middle } from "./_section.scss";
+import { section, sectionIcon, sectionPeriod, sectionContent, circle, middle } from "./_contentRow.scss";
 
 const Section = ({
     content,

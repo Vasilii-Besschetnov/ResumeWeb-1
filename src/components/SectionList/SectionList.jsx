@@ -1,14 +1,14 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import { sectionList, vertLine } from "./_sectionList.scss";
-import Section from "components/Section/Section.jsx";
+import ContentRow from "components/ContentRow/ContentRow.jsx";
 
 const SectionList = ({
     sections
 }) => {
     return (
         <div className={sectionList}>
-            {sections.map(s => <Section key={s.title} {...s} />)}
+            {sections.map(s => <ContentRow key={s.title} {...s} />)}
             <div className={vertLine}></div>
         </div>
     );
