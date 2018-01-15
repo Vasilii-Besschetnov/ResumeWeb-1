@@ -1,11 +1,25 @@
 import React from "react";
+import { section, sectionIcon, sectionPeriod, sectionContent, circle, middle } from "./_section.scss";
 
 const Section = ({
-    title,
+    content,
     iconCls,
-    items
+    isLargeIcon,
+    period,
+    periodHidden
 }) => {
-    return <div>"section"</div>;
+    const cls = [circle];
+    
+    if (isLargeIcon) cls.push(middle);
+    if (iconCls) cls.push(iconCls);
+    
+    return (<div class={section}>
+            <div class={sectionIcon}>
+                <div className={cls.join(" ")}></div>
+            </div>
+            <div class={sectionContent}>{content}</div>
+            {!periodHidden && (<div class={sectionPeriod}>{period}</div>)}
+    </div>);
 };
 
 

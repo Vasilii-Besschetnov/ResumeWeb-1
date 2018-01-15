@@ -1,0 +1,53 @@
+@import "~styles/_variables.scss";
+@import "~styles/_mixins.scss";
+
+$iconMargin: 15px;
+
+.section {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.sectionIcon {
+    width: $iconWidth;
+    text-align: center;
+    margin-right: $iconMargin;
+}
+
+.circle {
+    display: inline-block;
+    color: white;
+    font-size: 6px;
+    background: $color;
+    @include circle(10px);
+    
+    &.middle {
+        font-size: 16px;
+        @include circle(34px);        
+    }
+}
+
+.sectionContent {
+    flex: 1;
+}
+
+.sectionPeriod {
+    flex: 1 100%;
+    margin-left: $iconWidth + $iconMargin;
+}
+
+
+@media (min-width: $mediumDeviceWidth)  {
+    .section {
+        flex-wrap: nowrap;
+    }
+    
+    .sectionPeriod {
+        order: -1;
+        margin-left: 0;
+        flex: 0 auto;
+        width: $periodWidth;
+    }
+}

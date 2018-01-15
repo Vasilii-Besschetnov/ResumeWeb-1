@@ -18,7 +18,7 @@
 }
 
 .personPhoto {
-    @include circle($photoWidth);
+    @include circle(100px);
     background: white;
     overflow: hidden;
     
@@ -34,7 +34,7 @@
     }
     
     .personPhoto {
-        margin-right: $photoMargin;
+        margin-right: 30px;
     }
     
     .cntName {

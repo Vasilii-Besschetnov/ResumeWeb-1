@@ -11,5 +11,18 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 40px;
+    left: ($iconWidth - $width) / 2;
+    z-index: -1;
+}
+
+@media (min-width: $mediumDeviceWidth)  {
+    .vertLine {
+        $width: 2px;
+        width: $width;
+        background: $color2;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: $periodWidth + ($iconWidth - $width) / 2;
+    }
 }
