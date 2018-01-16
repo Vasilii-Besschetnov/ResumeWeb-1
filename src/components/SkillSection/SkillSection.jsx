@@ -1,7 +1,7 @@
 import React from "react";
 import ContentRow from "components/ContentRow/ContentRow.jsx";
-import { title as titleCls } from "styles/_layout.scss";
-import SectionItem from "components/SectionItem/SectionItem.jsx";
+import { title as titleCls, marginTopLarge } from "styles/_layout.scss";
+import SkillItem from "components/SkillItem/SkillItem.jsx";
 
 const SkillSection = ({
     title,
@@ -9,7 +9,14 @@ const SkillSection = ({
     skills
 }) => {
     return (
-        "test"
+        <React.Fragment>
+            <ContentRow key="sectionTitle" rootCls={marginTopLarge}
+                content={<span className={titleCls}>{title || "STUB SECTION TITLE"}</span>}
+                periodHidden={true}
+                isLargeIcon={true}
+                iconCls={iconCls}/>
+            {skills.map((item, i) => <SkillItem key={"item_" + i} {...item} />)}
+        </React.Fragment>
     );
 };
 

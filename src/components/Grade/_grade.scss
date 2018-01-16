@@ -1,0 +1,23 @@
+@import "~styles/_variables.scss";
+
+.grade {
+    position: relative;
+    display: block;
+    height: 10px;
+}
+
+.mark, .markRest {
+    position: absolute;
+    top: 0;
+    bottom: 0
+}
+
+.mark {
+    background: $color;
+    left:0;
+}
+
+.markRest {
+    background: $color2;
+    right: 0;
+}
