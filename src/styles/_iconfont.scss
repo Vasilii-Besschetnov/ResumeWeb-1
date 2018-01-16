@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?w0j4pj");
+  src: url("fonts/icomoon.eot?w0j4pj#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?w0j4pj") format("truetype"), url("fonts/icomoon.woff?w0j4pj") format("woff"), url("fonts/icomoon.svg?w0j4pj#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+$icons: (
+    Briefcase: "\e901",
+    Book: "\e91f",
+    Library: "\e921",
+    UserTie: "\e976",
+    Spinner10: "\e983",
+    Tree: "\e9bc",
+    Flag: "\e9cc",
+    Facebook2: "\ea91",
+    Instagram: "\ea92",
+    twitter: "\ea96",
+    github: "\eab0",
+    linkedin: "\eac9",
+    linkedin2: "\eaca",
+    HtmlFive: "\eae4",
+    HtmlFive2: "\before"
+);
+
+@each $icon, $iconChar in $icons {
+    .icon#{$icon} {
+        composes: icon;
+        &:before {
+            content: $iconChar
+        }
+    }
+}

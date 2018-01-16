@@ -1,7 +1,9 @@
+import { iconSpinner10, iconBriefcase, iconLibrary } from "styles/_iconfont.scss";
+
 const sections = [
         {
             title: "Resume Summary",
-            iconCls: "icon icon-spinner10",
+            iconCls: iconSpinner10,
             items: [
                 {
                     title: "",
@@ -18,7 +20,7 @@ I am seeking for a position that will continually <b>challenge my problem solvin
         },
         {
             title: "Experience",
-            iconCls: "icon  icon-briefcase",
+            iconCls: iconBriefcase,
             items: [
                 {
                     title: "UI Team Lead/Delivery Manager",
@@ -99,7 +101,7 @@ I designed an architecture and calculation engine for the solution.
         },
         {
             title: "Education",
-            iconCls: "icon icon-library",
+            iconCls: iconLibrary,
             items: [
                 {
                     title: "Master of Science in Mechanical Engineering, N.G. Chernyshevsky Saratov State University",

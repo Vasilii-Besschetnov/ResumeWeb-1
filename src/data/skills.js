@@ -1,7 +1,9 @@
+import { iconTree, iconUserTie, iconFlag } from "styles/_iconfont.scss";
+
 const skills = [
         {
             title: "Skills",
-            iconCls: "icon icon-tree",
+            iconCls: iconTree,
             skills: [
                 {
                     name: "Javascript",
@@ -35,7 +37,7 @@ const skills = [
         },
         {
             title: "Soft Skills",
-            iconCls: "icon icon-user-tie",
+            iconCls: iconUserTie,
             skills: [
                 {
                     name: "Agile/SCRUM/Lean",
@@ -57,7 +59,7 @@ const skills = [
         },
         {
             title: "Languages",
-            iconCls: "icon icon-flag",
+            iconCls: iconFlag,
             skills: [
                 {
                     name: "English",
