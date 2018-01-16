@@ -37,10 +37,10 @@ const SectionItem = ({
         );
     }
     
-    outputEls.push(<ContentRow key="sectionItemTitle"
+    outputEls.push(<ContentRow key="content"
         period={!title ? periodEl : null}
         iconHidden={!!title}
-        content={<div key="content" dangerouslySetInnerHTML={{__html: content}}></div>}
+        content={<div dangerouslySetInnerHTML={{__html: content}}></div>}
         isLargeIcon={false}
         rootCls={title ? "" : marginTopMiddle}/>);
     

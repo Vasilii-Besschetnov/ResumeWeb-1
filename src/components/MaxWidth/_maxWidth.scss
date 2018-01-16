@@ -1,5 +1,16 @@
+@import "~styles/_variables.scss";
+
 .maxWidth {    
     max-width: 1000px;
     margin: 0 auto;
-    padding: 20px 40px;
+    padding: 20px 10px;
+}
+
+
+@media (min-width: $mediumDeviceWidth)  {
+    .maxWidth {
+        $p: 40px;
+        padding-left: $p;
+        padding-right: $p;
+    }
 }
