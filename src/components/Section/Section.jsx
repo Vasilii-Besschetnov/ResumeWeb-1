@@ -1,7 +1,6 @@
 import React from "react";
 import ContentRow from "components/ContentRow/ContentRow.jsx";
-import { title as titleCls } from "styles/_layout.scss";
-import { section as sectionCls } from "./_section.scss";
+import { title as titleCls, marginTopLarge } from "styles/_layout.scss";
 import SectionItem from "components/SectionItem/SectionItem.jsx";
 
 const Section = ({
@@ -10,7 +9,7 @@ const Section = ({
     items
 }) => {
     return (<React.Fragment>
-        <ContentRow key="sectionTitle" rootCls={sectionCls}
+        <ContentRow key="sectionTitle" rootCls={marginTopLarge}
             content={<span className={titleCls}>{title || "STUB SECTION TITLE"}</span>}
             isLargeIcon={true}
             iconCls={iconCls}/>

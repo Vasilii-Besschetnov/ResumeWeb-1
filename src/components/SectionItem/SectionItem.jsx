@@ -1,7 +1,6 @@
 import React from "react";
 import ContentRow from "components/ContentRow/ContentRow.jsx";
-import { subTitle } from "styles/_layout.scss";
-import { sectionItem } from "./_sectionItem.scss";
+import { subTitle, marginTopMiddle } from "styles/_layout.scss";
 
 const dateToString = date => {
     if (!date) return "present";
@@ -33,7 +32,7 @@ const SectionItem = ({
             period={periodEl}
             content={<div className={subTitle}>{title}</div>}
             isLargeIcon={false}
-            rootCls={sectionItem}
+            rootCls={marginTopMiddle}
             />
         );
     }
@@ -43,7 +42,7 @@ const SectionItem = ({
         iconHidden={!!title}
         content={<div key="content" dangerouslySetInnerHTML={{__html: content}}></div>}
         isLargeIcon={false}
-        rootCls={title ? "" : sectionItem}/>);
+        rootCls={title ? "" : marginTopMiddle}/>);
     
     
     return (

@@ -18,7 +18,7 @@ SectionList.prototype = {
 }
 
 SectionList.defaultProps = {
-    sections: Array(3).fill({}) // todo relpace with []
+    sections: []
 };
 
 
