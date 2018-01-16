@@ -16,7 +16,7 @@ module.exports = {
     entry: {
         main: "./src/index.js"
     },
-    devtool: 'inline-source-map',
+    devtool: 'source-map',
     module: {
         rules: [{ // Process JS with Babel.
             test: /\.(js|jsx|mjs)$/,
