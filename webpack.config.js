@@ -68,13 +68,10 @@ module.exports = {
         new ExtractTextPlugin("[name].css"),
     ],
     resolve: {
-        alias: {
-            src: paths.src,
-            images: paths.images,
-            components: paths.components,
-            styles: paths.styles,
-            fonts: paths.fonts
-        }
+        modules: [
+            path.resolve(__dirname, 'src'),
+            'node_modules'
+        ],
     },
     output: {
         filename: "js/[name].bundle.js",

@@ -27,7 +27,7 @@ const PersonalInfo = () => {
                 value={<a target="_blank" href={"https://" + linkedInUrl}>{linkedInUrl}</a>}/>
             <Row label="Address"
                 value={<span>San Jose CA 95134<br></br>
-                    185 Estancia Dr.</span>}/>
+                    1572 Theo Dr.</span>}/>
         </div>
     );
 }

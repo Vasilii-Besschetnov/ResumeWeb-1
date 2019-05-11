@@ -1,6 +1,6 @@
 import React from "react";
 import SkillSection from "components/SkillSection/SkillSection.jsx";
-import sections from "src/data/skills.js";
+import sections from "data/skills.js";
 
 const SkillList = () => {
     return (
@@ -10,7 +10,7 @@ const SkillList = () => {
                     <SkillSection key={s.title} {...s}/>
                     );
             })}
-            
+
         </div>
     );
 };
@@ -21,4 +21,3 @@ SkillList.defaultProps = {
 };
 
 export default SkillList;
-            

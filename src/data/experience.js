@@ -76,7 +76,7 @@ Existing application was migrated to Win Forms + MySql.
 
 WCF services were implemented, that were consumed by desktop and web applications.
 
-I  developed a RUI using Win Forms. 
+I  developed a RUI using Win Forms.
 
 Support of different types of databases was added.
 
