@@ -26,7 +26,7 @@ const PersonalInfo = () => {
             <Row label="LinkedIn"
                 value={<a target="_blank" href={"https://" + linkedInUrl}>{linkedInUrl}</a>}/>
             <Row label="Address"
-                value={<span>San Jose CA 95134<br></br>
+                value={<span>San Jose CA 95131<br></br>
                     1572 Theo Dr.</span>}/>
         </div>
     );
