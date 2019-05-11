@@ -10,9 +10,9 @@ const skills = [
                     grade: 5,
                 },
                 {
-                    name: "Webpack, React JS, Redux, Jest",
-                    grade: 4
-                },      
+                    name: "React, Redux, Webpack, Mocha, Jest",
+                    grade: 5
+                },
                 {
                     name: "HTML/CSS",
                     grade: 5
@@ -28,6 +28,10 @@ const skills = [
                 {
                     name: ".Net/ASP.NET/C#",
                     grade: 4
+                },
+                {
+                    name: "Java",
+                    grade: 2
                 },
                 {
                     name: "T-SQL",
