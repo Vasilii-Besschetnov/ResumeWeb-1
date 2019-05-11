@@ -26,6 +26,10 @@ const skills = [
                     grade: 4
                 },
                 {
+                    name: "Nightwatch, selenium",
+                    grade: 3
+                },
+                {
                     name: ".Net/ASP.NET/C#",
                     grade: 4
                 },

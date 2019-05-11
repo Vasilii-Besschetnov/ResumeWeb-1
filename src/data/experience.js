@@ -23,6 +23,19 @@ I am seeking for a position that will continually <b>challenge my problem solvin
             iconCls: iconBriefcase,
             items: [
                 {
+                    title: "UI software engineer",
+                    period: {
+                        startDate: new Date(2017, 2, 1),
+                        endDate: null
+                    },
+                    content: `
+Dremio <a target='_blank' href='https://www.dremio.com/'>https://www.dremio.com/</a> <br/>
+
+Build a UI for big data application that displays millions of records. Improve user experience of application. Consistently work on performance optimization, code quality improvement.
+
+Ensure robustness and stability of a product by automation of integration tests.
+`               },
+                {
                     title: "UI Team Lead/Delivery Manager",
                     period: {
                         startDate: new Date(2011, 8, 1),
@@ -37,7 +50,7 @@ I gathered requirements from product owners and managed a distributed team up to
 
 Implemented rich user interfaces with <b>diversity of tools and frameworks</b>: Webpack, React Js, Redux, Jest, Web API, Asp.Net, Ext Js, Ext.Net, jQuery, Backbone, Bootstrap.
 
-Supported high standards of code quality through all code base.
+Supported high standards of code quality for UI code base.
 
 I built up a <b>framework</b> for private capital valuation module.
 
