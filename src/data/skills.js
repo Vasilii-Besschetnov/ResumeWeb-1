@@ -14,7 +14,7 @@ const skills = [
                     grade: 5
                 },
                 {
-                    name: "HTML/CSS",
+                    name: "HTML/CSS/LESS/SASS",
                     grade: 5
                 },
                 {

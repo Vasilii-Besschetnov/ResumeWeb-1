@@ -7,7 +7,7 @@ const sections = [
             items: [
                 {
                     title: "",
-                    content: `IT Professional with over 9 years of direct experience in several enterprise solutions. Primarily I specialize on <b>Web Technologies</b>,
+                    content: `IT Professional with over 11 years of direct experience in several enterprise solutions. Primarily I specialize on <b>Web Technologies</b>,
 and also have experience on all layers of application <b>from database to UI</b>.
 
 Experienced with all stages of the development cycle for dynamic web projects.
@@ -31,7 +31,7 @@ I am seeking for a position that will continually <b>challenge my problem solvin
                     content: `
 Dremio <a target='_blank' href='https://www.dremio.com/'>https://www.dremio.com/</a> <br/>
 
-Build a UI for big data application that displays millions of records. Improve user experience of application. Consistently work on performance optimization, code quality improvement.
+Build a UI for big data application that handles millions of records. Improve user experience of the application. Consistently work on performance optimization, code quality improvement.
 
 Ensure robustness and stability of a product by automation of integration tests.
 `               },
