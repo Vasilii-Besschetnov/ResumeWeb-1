@@ -14,9 +14,9 @@ const Row = ({
 }
 
 const PersonalInfo = () => {
-    const email = "vbesschetnov@yandex.ru",
+    const email = "vasilii.besschetnov87@gmail.com",
           linkedInUrl = "www.linkedin.com/in/vasilii-besschetnov",
-          phone = "650-495-23-88";
+          phone = "650-254-6517";
     return (
         <div className={cntPersonalInfo}>
             <Row label="Phone"
